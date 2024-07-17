@@ -43,7 +43,7 @@ export default function App() {
       <Navbar user={user} setUser={setUser} />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/receipe' element={<Recipes />} />
+        <Route path='/recipes' element={<Recipes />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
       </Routes>
