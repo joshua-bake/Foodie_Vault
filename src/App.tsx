@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Signup from "./Components/Signup";
 import Login from "./Components/Login";
 import Recipes from "./Components/Recipes";
+import { ShowRecipe } from "./Components/ShowRecipe";
 
 export default function App() {
 
@@ -44,6 +45,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/recipes' element={<Recipes />} />
+        <Route path='/recipes/:recipeId' element={<ShowRecipe />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
       </Routes>
